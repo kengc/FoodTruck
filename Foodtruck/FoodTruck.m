@@ -29,6 +29,7 @@
 
 -(void)serve:(int)orders {
     
+    //fetch price from Cook via delegate
     double price = [self.delegate foodTruck:self priceForFood:self.foodType];
     
     NSLog(@"Welcome to %@", self.name);
